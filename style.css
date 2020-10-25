@@ -7,7 +7,6 @@
     background: white;
     position: relative;
     top: 20vh;
-    overflow: hidden;
   }
 
   #tap {
@@ -117,14 +116,5 @@
       width: fit-content;
       background: black;
       font-family: 'Dancing Script', cursive;
-    }
-    body{
-      overflow: hidden;
-    }
-    
-  }
-  @media only screen and (max-width: 1920){
-    body{
-      overflow: hidden;
     }
   }
