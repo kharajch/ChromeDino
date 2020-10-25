@@ -1,0 +1,6 @@
+console.log("No internet");
+let main = document.querySelector(".main");
+main.style.display = "none";
+let main2 = document.querySelector(".main2");
+let inside_main2=' <style>\n#dino{\n    position: relative;\n    left: 25vw;\n    top: 30vh;\n    border-bottom: 2px solid #595959;\n    width: 45px;\n}\n#text{\n    color: white;\n    position: relative;\n    left: 25vw;\n    font-size: 22.5px;\n    font-weight: 500;\n    font-family: "Segoe UI", Tahoma, sans-serif;\n}\n#data li{\n    color: white;\n    font-family: "Segoe UI", Tahoma, sans-serif;\n    position: relative;\n  top: 15px;  left: 28vw;\n}\n#try{\n    font-family: "Segoe UI", Tahoma, sans-serif;\n    position: relative;\n    color: white;\n    top: 10px;\n    left: 25vw;\n }\n#internet_disconnected{\n    font-family: "Segoe UI", Tahoma, sans-serif;\n    position: relative;\n    color: white;\n    top: 25px;\n    left: 25vw;\n    font-size: 75%;\n}\n</style>\n<div class="image">\n<img src="t-rex.png" alt="no Internet" id="dino">\n</div>\n<br><br><br><br><br><br><br><br><br><br><br>\n<div class="text">\n<strong><p id="text">No internet</p></strong>\n<p id="try">Try:</p>\n<ul id="data">\n    <li>Checking the network cables, modem, and router</li>\n    <li>Reconnecting to Wi-Fi</li>\n</ul>\n<p id="internet_disconnected">ERR_INTERNET_DISCONNECTED</p>\n</div>';
+main2.innerHTML = inside_main2;
