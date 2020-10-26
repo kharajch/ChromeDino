@@ -101,6 +101,15 @@
   .ns{
     /* .ns class is for main h2 tag that contains Device not supported tag*/
     display: none;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 30vh;
+    border: 2px solid red;
+    border-radius: 5px;
+    width: fit-content;
+    background: black;
+    font-family: 'Dancing Script', cursive;
   }
   @media only screen and (max-width: 175px) {
     .main{
@@ -113,15 +122,9 @@
     }
     .ns{ 
       /* .ns class is for main h2 tag that contains Device not supported tag*/
-      text-align: center;
-      display: block;
-      color: white;
-      position: relative;
-      top: 30vh;
-      border: 2px solid red;
-      border-radius: 5px;
-      width: fit-content;
-      background: black;
-      font-family: 'Dancing Script', cursive;
+     display: block;
+    }
+    body{
+      overflow: hidden;
     }    
   }
