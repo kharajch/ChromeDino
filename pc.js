@@ -7,6 +7,11 @@ onkeydown = function (e) {
         tap();
         document.querySelector(".main").style.display = 'block';
         document.querySelector(".main2").style.display = 'none';
+        let media = window.matchMedia("(max-width: 175px)");
+        if (media.matches) {
+            document.querySelector(".main").style.display = 'none';
+            let aj = document.getElementById('audio').innerHTML = "";
+        }
     }
     if (keycode == 80) {
         go = document.getElementById('Go');
@@ -17,6 +22,11 @@ onkeydown = function (e) {
         let tap = document.getElementById('tap');
         tap.innerHTML = "<h3>Tap to Start the Game Again!</h3>";
         tap.style.display = "block";
+        let media = window.matchMedia("(max-width: 175px)");
+        if (media.matches) {
+            document.querySelector(".main").style.display = 'none';
+            let aj = document.getElementById('audio').innerHTML = "";
+        }
     }
 }
 document.addEventListener("click", function(){
@@ -24,5 +34,10 @@ document.addEventListener("click", function(){
     document.querySelector(".main2").style.display = 'none';
     dinojump();
     obs();
-    tap()
+    tap();
+    let media = window.matchMedia("(max-width: 175px)");
+        if (media.matches) {
+            document.querySelector(".main").style.display = 'none';
+            let aj = document.getElementById('audio').innerHTML = "";
+        }
 });
